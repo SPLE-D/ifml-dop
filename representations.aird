@@ -17,7 +17,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="main.core#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_eWbHgEiSEfGnZ8sqboWh4w" name="EventCreation IFMLDiagram" repPath="#_eWVn8EiSEfGnZ8sqboWh4w" changeId="1777993756747">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_eWbHgEiSEfGnZ8sqboWh4w" name="EventCreation" repPath="#_eWVn8EiSEfGnZ8sqboWh4w" changeId="1777993756747">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="EventCreation.core#/"/>
       </ownedRepresentationDescriptors>
