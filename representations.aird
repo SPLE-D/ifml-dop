@@ -18,7 +18,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="main.core#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lGb_kEiOEfG60vkGpIyeYQ" name="new IFMLDiagram" repPath="#_lGYVMEiOEfG60vkGpIyeYQ" changeId="1777992703972">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lGb_kEiOEfG60vkGpIyeYQ" name="Review" repPath="#_lGYVMEiOEfG60vkGpIyeYQ" changeId="1777992703972">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="review.core#/"/>
       </ownedRepresentationDescriptors>
