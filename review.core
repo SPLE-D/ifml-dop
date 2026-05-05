@@ -2,13 +2,15 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_PCQooEiMEfG60vkGpIyeYQ">
   <interactionFlowModel id="_peC5AEiOEfG60vkGpIyeYQ">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_pengwEiOEfG60vkGpIyeYQ" name="Review">
+      <inputPorts id="_ypYf0EiREfG60vkGpIyeYQ" name="Input Port"/>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_4ZvcQEiOEfG60vkGpIyeYQ" name="Table Review Page">
+        <annotations text="/rating"/>
         <viewElements xsi:type="ext:List" id="__9-pwEiOEfG60vkGpIyeYQ" name="Table Review">
           <viewComponentParts xsi:type="core:DataBinding" id="_GwYxsEiPEfG60vkGpIyeYQ" name="List Review" uniformResourceIdentifier="call/review/list">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_QvL9IEiPEfG60vkGpIyeYQ" name="Visualization Attribute">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_QvL9IEiPEfG60vkGpIyeYQ" name="Rating">
               <featureConcept href="main.core#//@domainModel/@domainElements.29"/>
             </subViewComponentParts>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ndVwEEiPEfG60vkGpIyeYQ" name="Visualization Attribute">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ndVwEEiPEfG60vkGpIyeYQ" name="Comment">
               <featureConcept href="main.core#//@domainModel/@domainElements.30"/>
             </subViewComponentParts>
           </viewComponentParts>
