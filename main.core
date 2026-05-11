@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_VJW0oEiKEfGJlqplkR1iEg">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_VJW0oEiKEfGJlqplkR1iEg" name="Attendee">
   <interactionFlowModel id="_1YPW8EiKEfGJlqplkR1iEg">
-    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_1YsC4EiKEfGJlqplkR1iEg" name="ViewContainer"/>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_1YsC4EiKEfGJlqplkR1iEg" name="Home" isXOR="true"/>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_xBloUEihEfGehLgYsDeT5g" name="Attendee">
+      <annotations text="Attendee"/>
+      <viewElementEvents id="_E-2oAEiiEfGehLgYsDeT5g" name="Attendee">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_IpsiEEiiEfGehLgYsDeT5g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="attendee.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_cOKAMEiiEfGehLgYsDeT5g" name="CheckIn">
+      <annotations text="CheckIn"/>
+      <viewElementEvents id="_hsB-IEiiEfGehLgYsDeT5g" name="CheckIn">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ra0XoEiiEfGehLgYsDeT5g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="checkin.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_y_rQMEiiEfGehLgYsDeT5g" name="EventCreation">
+      <annotations text="EventCreation"/>
+      <viewElementEvents id="_GLqj8EijEfGehLgYsDeT5g" name="EventCreation">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_JmV7EEijEfGehLgYsDeT5g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_MdegQEijEfGehLgYsDeT5g" name="Notification">
+      <annotations text="Notification"/>
+      <viewElementEvents id="_UQvBMEijEfGehLgYsDeT5g" name="Notification">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_Wo5ycEijEfGehLgYsDeT5g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="notification.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_aW4gEEijEfGehLgYsDeT5g" name="Report">
+      <annotations text="Report"/>
+      <viewElementEvents id="_gwQc8EijEfGehLgYsDeT5g" name="Report">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_jvFlkEijEfGehLgYsDeT5g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_mj2zQEijEfGehLgYsDeT5g" name="Review">
+      <annotations text="Review"/>
+      <viewElementEvents id="_tJ89gEijEfGehLgYsDeT5g" name="Review">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_vl_iIEijEfGehLgYsDeT5g">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_VJdiUEiKEfGJlqplkR1iEg">
     <domainElements xsi:type="core:UMLDomainConcept" id="_VJ5AIEiKEfGJlqplkR1iEg" name="CheckInImpl">

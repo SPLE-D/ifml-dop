@@ -4,6 +4,7 @@
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_0Gp4oEidEfGehLgYsDeT5g" name="Review">
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_3irTkEidEfGehLgYsDeT5g" name="Table Review Page">
         <annotations text="/review"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_7uS_cEidEfGehLgYsDeT5g" name="Table Review">
           <viewComponentParts xsi:type="core:DataBinding" id="_CP9VoEieEfGehLgYsDeT5g" name="List Review" uniformResourceIdentifier="call/review/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Gqve4EieEfGehLgYsDeT5g" name="rating">
