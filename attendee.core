@@ -6,6 +6,10 @@
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_psJhQEigEfGehLgYsDeT5g" name="Table Attendee Page">
         <annotations text="/attendee"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_voWM8E4REfGk1LLXzSRiFA" name="Add Attendee">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_zfT3cE4REfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_xGYeMEigEfGehLgYsDeT5g" name="Table Attendee">
           <viewComponentParts xsi:type="core:DataBinding" id="_1m4N4EigEfGehLgYsDeT5g" name="Data Binding" uniformResourceIdentifier="call/attendee/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4UwwcEigEfGehLgYsDeT5g" name="attendeeId">
@@ -19,6 +23,34 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_iJ2c8E4QEfGk1LLXzSRiFA" name="Add Attendee Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/attendee/add"/>
+        <viewElements xsi:type="ext:Form" id="_od-GYE4QEfGk1LLXzSRiFA" name="Add Attendee">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_Z65CAE4REfGk1LLXzSRiFA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_gCU6UE4REfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_rWcIUE4QEfGk1LLXzSRiFA" name="Phone Number">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_z5Qd8E4QEfGk1LLXzSRiFA" name="phoneNumber">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_5BUj8E4QEfGk1LLXzSRiFA" name="Email">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_-XvPAE4QEfGk1LLXzSRiFA" name="email">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_YpxYYE4REfGk1LLXzSRiFA" name="Save AttendeeManagement" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_nbW9YE4REfGk1LLXzSRiFA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_pSEnYE4REfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
