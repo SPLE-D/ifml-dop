@@ -29,10 +29,7 @@
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_KGNakE4MEfGk1LLXzSRiFA" name="Attended">
             <annotations text="Required"/>
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_MbhsIE4MEfGk1LLXzSRiFA" name="attended">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_MbhsIE4MEfGk1LLXzSRiFA" name="attended"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
