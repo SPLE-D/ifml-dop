@@ -6,6 +6,10 @@
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_mddNIEifEfGehLgYsDeT5g" name="List Notification Page">
         <annotations text="/notification"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.4/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_ACU-AE4QEfGk1LLXzSRiFA" name="Add Notification">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_BG4yUE4QEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_pHnGQEifEfGehLgYsDeT5g" name="List Notification">
           <viewComponentParts xsi:type="core:DataBinding" id="_r3RxgEifEfGehLgYsDeT5g" name="List Notification" uniformResourceIdentifier="call/notification/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_3iai8EifEfGehLgYsDeT5g" name="notificationId">
@@ -16,6 +20,27 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_U7WQwE4PEfGk1LLXzSRiFA" name="Add Notification Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/notification/add"/>
+        <viewElements xsi:type="ext:Form" id="_fyCGcE4PEfGk1LLXzSRiFA" name="Add Notification">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_5kQuYE4PEfGk1LLXzSRiFA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_7KwyIE4PEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_h-f-AE4PEfGk1LLXzSRiFA" name="Content">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_nFBy8E4PEfGk1LLXzSRiFA" name="content">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_12YHYE4PEfGk1LLXzSRiFA" name="Save Notification" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_-UgKQE4PEfGk1LLXzSRiFA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="__H_csE4PEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
