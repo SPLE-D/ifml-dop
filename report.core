@@ -6,6 +6,10 @@
       <inputPorts id="_sDDsEEiREfGJlqplkR1iEg" name="Input Port"/>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_peV7UUiLEfGJlqplkR1iEg" name="Table Report Page">
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.5/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_M4kfYE4KEfGk1LLXzSRiFA" name="Add Report">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_TpBfgE4KEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_XQiRoEiMEfGJlqplkR1iEg" name="Table Report">
           <viewComponentParts xsi:type="core:DataBinding" id="_bdy8QEiMEfGJlqplkR1iEg" name="List Report" uniformResourceIdentifier="call/report/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_K8HV0EiQEfGJlqplkR1iEg" name="Summary">
@@ -19,6 +23,48 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_eX1dgE4IEfGk1LLXzSRiFA" name="Add Report Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/report/add"/>
+        <viewElements xsi:type="ext:Form" id="_rDxkoE4IEfGk1LLXzSRiFA" name="Add Report">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_HFxaUE4KEfGk1LLXzSRiFA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_J7N9cE4KEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_tOjaIE4IEfGk1LLXzSRiFA" name="Summary">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_xLmegE4IEfGk1LLXzSRiFA" name="summary">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_6w5k0E4IEfGk1LLXzSRiFA" name="Total Revenue">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_TEMJkE4JEfGk1LLXzSRiFA" name="totalRevenue">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_YthwoE4JEfGk1LLXzSRiFA" name="Total Attendee">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_imFxME4JEfGk1LLXzSRiFA" name="totalAttendee">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_pT_MkE4JEfGk1LLXzSRiFA" name="Event ID">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_1GGIsE4JEfGk1LLXzSRiFA" name="eventId">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_9QXbcE4JEfGk1LLXzSRiFA" name="Save Report" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_C1LH0E4KEfGk1LLXzSRiFA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_FVVXcE4KEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
