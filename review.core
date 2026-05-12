@@ -2,9 +2,14 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_t2kaoEidEfGehLgYsDeT5g">
   <interactionFlowModel id="_0GlnMEidEfGehLgYsDeT5g">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_0Gp4oEidEfGehLgYsDeT5g" name="Review">
+      <inputPorts id="_Gh3CsE4PEfGk1LLXzSRiFA" name="Input Port"/>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_3irTkEidEfGehLgYsDeT5g" name="Table Review Page">
         <annotations text="/review"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_LxdwkE4OEfGk1LLXzSRiFA" name="Add Review">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_OM4qIE4OEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_7uS_cEidEfGehLgYsDeT5g" name="Table Review">
           <viewComponentParts xsi:type="core:DataBinding" id="_CP9VoEieEfGehLgYsDeT5g" name="List Review" uniformResourceIdentifier="call/review/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Gqve4EieEfGehLgYsDeT5g" name="rating">
@@ -15,6 +20,48 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_KWjHME4NEfGk1LLXzSRiFA" name="Add Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/review/add"/>
+        <viewElements xsi:type="ext:Form" id="_NPJsAE4NEfGk1LLXzSRiFA" name="Add Review">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_AbIKcE4OEfGk1LLXzSRiFA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_HV9OkE4OEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_QGHSEE4NEfGk1LLXzSRiFA" name="Event ID">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_T21xsE4NEfGk1LLXzSRiFA" name="eventId">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_ZW9yYE4NEfGk1LLXzSRiFA" name="Attendee ID">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_cEr84E4NEfGk1LLXzSRiFA" name="attendeeId">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_hbqBkE4NEfGk1LLXzSRiFA" name="Rating">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_lEty8E4NEfGk1LLXzSRiFA" name="rating">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_xG2IEE4NEfGk1LLXzSRiFA" name="Comment">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_0E0VEE4NEfGk1LLXzSRiFA" name="comment">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_9A44ME4NEfGk1LLXzSRiFA" name="Save Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_Iy34gE4OEfGk1LLXzSRiFA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_LMYtkE4OEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
