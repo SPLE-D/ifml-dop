@@ -2,9 +2,14 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_fXFHsEicEfGehLgYsDeT5g">
   <interactionFlowModel id="_p7Yz8EicEfGehLgYsDeT5g">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_p7eTgEicEfGehLgYsDeT5g" name="EventCreation">
+      <inputPorts id="_bzsPUE4UEfGk1LLXzSRiFA" name="Input Port"/>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_x9V4MEicEfGehLgYsDeT5g" name="Table EventCreation Page">
         <annotations text="/eventcreation"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_O_du4E4UEfGk1LLXzSRiFA" name="Add Event">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_RCn5cE4UEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_98RIUEicEfGehLgYsDeT5g" name="Table EventCreation">
           <viewComponentParts xsi:type="core:DataBinding" id="_DOugcEidEfGehLgYsDeT5g" name="List EventCreation" uniformResourceIdentifier="call/eventcreation/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Nj5kgEidEfGehLgYsDeT5g" name="eventId">
@@ -27,6 +32,55 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_nN3egE4SEfGk1LLXzSRiFA" name="Add Event Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/eventcreation/add"/>
+        <viewElements xsi:type="ext:Form" id="_0PtkME4SEfGk1LLXzSRiFA" name="Add Event">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_F6oRUE4UEfGk1LLXzSRiFA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_IdmkYE4UEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_788VoE4SEfGk1LLXzSRiFA" name="Start Date">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_CqzUwE4TEfGk1LLXzSRiFA" name="startDate">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_Ie7PgE4TEfGk1LLXzSRiFA" name="End Date">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_MbOtAE4TEfGk1LLXzSRiFA" name="endDate">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_TMb7EE4TEfGk1LLXzSRiFA" name="Capacity">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_X_ASME4TEfGk1LLXzSRiFA" name="capacity">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_k7J_kE4TEfGk1LLXzSRiFA" name="Name">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_n5EiME4TEfGk1LLXzSRiFA" name="name">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_sXa80E4TEfGk1LLXzSRiFA" name="Location">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_w1wJUE4TEfGk1LLXzSRiFA" name="location">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_B1K30E4UEfGk1LLXzSRiFA" name="Save EventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_JghZ8E4UEfGk1LLXzSRiFA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_MNBccE4UEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
