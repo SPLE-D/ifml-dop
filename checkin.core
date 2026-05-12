@@ -5,6 +5,10 @@
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_gp6WoEieEfGehLgYsDeT5g" name="Table CheckIn Page">
         <annotations text="/checkin"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_thTaME4MEfGk1LLXzSRiFA" name="Add CheckIn">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_uIKl4E4MEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_jg-qYEieEfGehLgYsDeT5g" name="Table Checkin">
           <viewComponentParts xsi:type="core:DataBinding" id="_rdo-8EieEfGehLgYsDeT5g" name="List CheckIn" uniformResourceIdentifier="call/checkin/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ClENgEifEfGehLgYsDeT5g" name="attended">
@@ -15,6 +19,27 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_C9VTYE4MEfGk1LLXzSRiFA" name="Add CheckIn Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/checkin/add"/>
+        <viewElements xsi:type="ext:Form" id="_I5izIE4MEfGk1LLXzSRiFA" name="Add CheckIn">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_jXNkwE4MEfGk1LLXzSRiFA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_l4mjcE4MEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_KGNakE4MEfGk1LLXzSRiFA" name="Attended">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_MbhsIE4MEfGk1LLXzSRiFA" name="attended">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_gVoqIE4MEfGk1LLXzSRiFA" name="Save CheckIn" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_nS7MYE4MEfGk1LLXzSRiFA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_rXZucE4MEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
