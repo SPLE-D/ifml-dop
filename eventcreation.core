@@ -11,7 +11,15 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_RCn5cE4UEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_98RIUEicEfGehLgYsDeT5g" name="Table EventCreation">
+          <viewElementEvents id="_O1YAsFOkEfGdleAigTRmcg" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_UM10oFOkEfGdleAigTRmcg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+              <parameterBindingGroup id="_U01owFOkEfGdleAigTRmcg">
+                <parameterBindings id="_WSWIkFOkEfGdleAigTRmcg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_DOugcEidEfGehLgYsDeT5g" name="List EventCreation" uniformResourceIdentifier="call/eventcreation/list">
+            <parameters id="_6vFn4FOjEfGdleAigTRmcg" name="eventId" direction="out"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Nj5kgEidEfGehLgYsDeT5g" name="eventId">
               <featureConcept href="main.core#//@domainModel/@domainElements.5"/>
             </subViewComponentParts>
@@ -81,6 +89,32 @@
         <actionEvents id="_JghZ8E4UEfGk1LLXzSRiFA">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_MNBccE4UEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_krHsUFOhEfGdleAigTRmcg" name="Detail EventCreation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <viewElements xsi:type="ext:Details" id="_lrxRAFOhEfGdleAigTRmcg" name="Detail TableEventCreation">
+          <annotations text="/TableEventCreation/:eventId"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_aZsDUFOiEfGdleAigTRmcg" name="Data Binding">
+            <parameters id="_un2JQFOjEfGdleAigTRmcg" name="eventId"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_GU3NoFOjEfGdleAigTRmcg" name="eventId">
+              <featureConcept href="main.core#//@domainModel/@domainElements.5"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HNWU0FOjEfGdleAigTRmcg" name="startDate">
+              <featureConcept href="main.core#//@domainModel/@domainElements.6"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HjtmYFOjEfGdleAigTRmcg" name="endDate">
+              <featureConcept href="main.core#//@domainModel/@domainElements.7"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_MUM54FOjEfGdleAigTRmcg" name="capacity">
+              <featureConcept href="main.core#//@domainModel/@domainElements.8"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_NWqccFOjEfGdleAigTRmcg" name="name">
+              <featureConcept href="main.core#//@domainModel/@domainElements.9"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_OaAv0FOjEfGdleAigTRmcg" name="location">
+              <featureConcept href="main.core#//@domainModel/@domainElements.10"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
