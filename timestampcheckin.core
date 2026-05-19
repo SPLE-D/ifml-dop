@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_cslk8FOgEfGoYrEBeRtDlA">
+  <domainModel id="_cslk8VOgEfGoYrEBeRtDlA">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_csyZQFOgEfGoYrEBeRtDlA" name="CheckInImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_Z6wdcEMAEfG1Y49jyyuFTQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAUFOgEfGoYrEBeRtDlA" name="checkInId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_kf_90EMAEfG1Y49jyyuFTQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAUVOgEfGoYrEBeRtDlA" name="attended">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_ED5pcEMBEfG1Y49jyyuFTQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAUlOgEfGoYrEBeRtDlA" name="attendeemanagementimpl">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_cErTY1N_EfGIgMAuQAXF3g"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cszAU1OgEfGoYrEBeRtDlA" name="checkIn">
+      <behavioralFeature xsi:type="uml:Operation" href="uml-dop.uml#_WbUssEMBEfG1Y49jyyuFTQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cszAVFOgEfGoYrEBeRtDlA" name="EventCreationImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_QNvkkEMLEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAVVOgEfGoYrEBeRtDlA" name="eventId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_oteC0EMLEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAVlOgEfGoYrEBeRtDlA" name="startDate">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_-apg8EMLEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAV1OgEfGoYrEBeRtDlA" name="endDate">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_Z5liUEMMEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAWFOgEfGoYrEBeRtDlA" name="capacity">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_d4x7wEMMEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAWVOgEfGoYrEBeRtDlA" name="name">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_iqQGsEMMEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAWlOgEfGoYrEBeRtDlA" name="location">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_o5yLEEMMEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cszAW1OgEfGoYrEBeRtDlA" name="AttendeeManagementImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_HMX_0EMNEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAXFOgEfGoYrEBeRtDlA" name="attendeeId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_g6-sAEMNEfGD1KWMcrYNXA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAXVOgEfGoYrEBeRtDlA" name="phoneNumber">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_IIXmoEMQEfGL-cguweMm8g"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAXlOgEfGoYrEBeRtDlA" name="email">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_GM1kQEiFEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cszAX1OgEfGoYrEBeRtDlA" name="NotificationImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_EJvGgEMTEfGYX-lsrzzLvA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAYFOgEfGoYrEBeRtDlA" name="notifiationId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_rPttYEMcEfGYX-lsrzzLvA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAYVOgEfGoYrEBeRtDlA" name="content">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_3e2s4EiEEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLBehavioralFeature" id="_cszAYlOgEfGoYrEBeRtDlA" name="sendNotification">
+      <behavioralFeature xsi:type="uml:Operation" href="uml-dop.uml#_AJcrcEMUEfGYX-lsrzzLvA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cszAY1OgEfGoYrEBeRtDlA" name="ReportImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_GN0jEEiCEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAZFOgEfGoYrEBeRtDlA" name="reportId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_UeGKwEiCEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAZVOgEfGoYrEBeRtDlA" name="eventId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_O5xUoEiEEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAZlOgEfGoYrEBeRtDlA" name="totalAttendee">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_SCsNYEiEEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAZ1OgEfGoYrEBeRtDlA" name="totalRevenue">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_YVmV4EiEEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAaFOgEfGoYrEBeRtDlA" name="summary">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_dr-ksEiEEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cszAaVOgEfGoYrEBeRtDlA" name="ReviewImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_1Dhk0EiCEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAalOgEfGoYrEBeRtDlA" name="reviewId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#__pA80EiCEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAa1OgEfGoYrEBeRtDlA" name="eventId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_rgXXEEiDEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAbFOgEfGoYrEBeRtDlA" name="attendeeId">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_4k49UEiDEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAbVOgEfGoYrEBeRtDlA" name="rating">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_-pAb4EiDEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAblOgEfGoYrEBeRtDlA" name="comment">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_DyL8MEiEEfGJlqplkR1iEg"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_cszAb1OgEfGoYrEBeRtDlA" name="CheckInImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_-e9LsFN-EfGIgMAuQAXF3g"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAcFOgEfGoYrEBeRtDlA" name="timestamp">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_FTk6IFN_EfGIgMAuQAXF3g"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAcVOgEfGoYrEBeRtDlA" name="checkinimpl">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_VUhOMlN_EfGIgMAuQAXF3g"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAclOgEfGoYrEBeRtDlA" name="checkinimpl">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_VUh1QlN_EfGIgMAuQAXF3g"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_cszAc1OgEfGoYrEBeRtDlA" name="checkinimpl">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_cEr6clN_EfGIgMAuQAXF3g"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
