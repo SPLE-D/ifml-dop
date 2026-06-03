@@ -1,16 +1,161 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_NAh4kFOcEfGFI-aBI-4Y6w">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_NAh4kFOcEfGFI-aBI-4Y6w">
   <interactionFlowModel id="_R-C7cFOcEfGFI-aBI-4Y6w">
     <interactionFlowModelElements xsi:type="dop-extension:DeltaModuleDefinition" id="_R-F-wFOcEfGFI-aBI-4Y6w" name="TypeEventCreation">
       <inputPorts id="_ys-6AFOgEfGdleAigTRmcg" name="Input Port"/>
       <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_YwxsIFOfEfGdleAigTRmcg" name="Table TypeEventCreation Page">
         <annotations text="/TypeEventCreation"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.7/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_lGFZwF1UEfG1jsIIA6EoYA" name="Add TypeEventCreation">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_ovgXgF1UEfG1jsIIA6EoYA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0"/>
+        </viewElementEvents>
         <viewElements xsi:type="dop-extension:ModifiedList" id="_dt67kFOfEfGdleAigTRmcg" name="Table TypeEventCreation">
-          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_h5GikFOfEfGdleAigTRmcg" name="Modified Data Binding">
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_YihtAF0cEfGlIqyqqwXUBA" name="Detail">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_bueEkF0cEfGlIqyqqwXUBA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+              <parameterBindingGroup id="_qj614F0cEfGlIqyqqwXUBA">
+                <parameterBindings id="_v2aDMF0cEfGlIqyqqwXUBA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0"/>
+          </viewElementEvents>
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_89LmMF1eEfG6NcC2Whr9Cg" name="Edit">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="___Nz0F1eEfG6NcC2Whr9Cg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <parameterBindingGroup id="_TnFLQF1fEfG6NcC2Whr9Cg">
+                <parameterBindings id="_Vja8IF1fEfG6NcC2Whr9Cg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1"/>
+          </viewElementEvents>
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_HNSVUF1lEfGmYLPV3LQ--Q" name="Delete">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_BlUx0F1mEfGmYLPV3LQ--Q" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
+              <parameterBindingGroup id="_HbOOMF1mEfGmYLPV3LQ--Q">
+                <parameterBindings id="_V1YKoF1mEfGmYLPV3LQ--Q" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_h5GikFOfEfGdleAigTRmcg" name="List TypeEventCreation" uniformResourceIdentifier="call/typeeventcreation/list">
+            <parameters id="_ABwF4F0cEfGlIqyqqwXUBA" name="eventId" direction="out"/>
             <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_ohNfAFOfEfGdleAigTRmcg" name="eventType" featureConcept="//@domainModel/@domainElements.32"/>
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0"/>
           </viewComponentParts>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
         </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_4xCRsF1lEfGmYLPV3LQ--Q" name="Delete EventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isModal="true">
+          <parameters id="_SD9ugF1mEfGmYLPV3LQ--Q" name="eventId"/>
+          <viewElements xsi:type="ext:Form" id="_gsW7QF1mEfGmYLPV3LQ--Q" name="Delete Event">
+            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_yzT5kF1mEfGmYLPV3LQ--Q" name="Remove">
+              <outInteractionFlows xsi:type="core:NavigationFlow" id="_BdiSUF1nEfGmYLPV3LQ--Q" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
+            </viewElementEvents>
+            <viewComponentParts xsi:type="core:DataBinding" id="_mj1E8F1mEfGmYLPV3LQ--Q" name="Detail TypeEventCreation" uniformResourceIdentifier="call/typeeventcreation/detail"/>
+          </viewElements>
+        </viewElements>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_aQJCMF0YEfGzmPu85Y_SYw" name="Detail TypeEventCreation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/TypeEventCreation/:eventId"/>
+        <viewElements xsi:type="dop-extension:ModifiedDetail" id="_ku7VQF0YEfGzmPu85Y_SYw" name="Detail TableTypeEventCreation">
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_s-5nYF0YEfGzmPu85Y_SYw" name="Detail TypeEventCreation" uniformResourceIdentifier="call/typeeventcreation/detail">
+            <parameters id="_OStQwF0hEfGopNoBf7UyRw" name="eventId"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_6sYEAF0YEfGzmPu85Y_SYw" name="eventType" featureConcept="//@domainModel/@domainElements.32"/>
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.0"/>
+          </viewComponentParts>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0"/>
+        </viewElements>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_gNWbIF1SEfG1jsIIA6EoYA" name="Add Event Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/TypeEventCreation/add"/>
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_kpBVMF1SEfG1jsIIA6EoYA" name="Add Event">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_LqH8wF1UEfG1jsIIA6EoYA" name="Save">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_YPvZcF1UEfG1jsIIA6EoYA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+              <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:AddedDataBinding" id="_lQDGsF1XEfG9MOHyRQPmFg" name="EventType">
+            <subViewComponentParts xsi:type="dop-extension:AddedSelectionField" id="_sH-n0F1XEfG9MOHyRQPmFg" name="Event Type">
+              <annotations text="Required"/>
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_7owOEF1XEfG9MOHyRQPmFg" name="eventType" direction="out">
+                <type xsi:type="uml:Enumeration" href="uml-dop.uml#_fAP_YFNNEfGiH6Q1wWpgzg"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_83ocAF1XEfG9MOHyRQPmFg" name="PUBLIC">
+                <type xsi:type="uml:Enumeration" href="uml-dop.uml#_fAP_YFNNEfGiH6Q1wWpgzg"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_92Lu8F1XEfG9MOHyRQPmFg" name="PRIVATE">
+                <type xsi:type="uml:Enumeration" href="uml-dop.uml#_fAP_YFNNEfGiH6Q1wWpgzg"/>
+              </subViewComponentParts>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
+        </viewElements>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_RRgcAF1UEfG1jsIIA6EoYA" name="Save TypeEventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_btWIwF1UEfG1jsIIA6EoYA" name="ModifiedActionEvent">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_fSBwcF1UEfG1jsIIA6EoYA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0"/>
+        </actionEvents>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_iGu6cF1ZEfGZdpGuJqXIFA" name="Edit EventCreation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/TypeEventCreation/:eventId/edit"/>
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_smTQoF1ZEfGZdpGuJqXIFA" name="Edit Event">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_z_bk4F1aEfGZdpGuJqXIFA" name="Update">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_3n5gYF1aEfGZdpGuJqXIFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_lbIJwF1hEfG5yrHhaCd4cw" name="Detail TypeEventCreation" uniformResourceIdentifier="call/typeeventcreation/detail">
+            <parameters id="_5zAo4F1hEfG5yrHhaCd4cw" name="eventId"/>
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewComponentParts.0"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="dop-extension:AddedDataBinding" id="_PDT9wF1iEfG5yrHhaCd4cw" name="eventType">
+            <subViewComponentParts xsi:type="dop-extension:AddedSelectionField" id="_bnt5gF1iEfG5yrHhaCd4cw" name="Event Type">
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_gxWFwF1iEfG5yrHhaCd4cw" name="eventType" direction="out">
+                <type xsi:type="uml:Enumeration" href="uml-dop.uml#_fAP_YFNNEfGiH6Q1wWpgzg"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_hzrsgF1iEfG5yrHhaCd4cw" name="PUBLIC">
+                <type xsi:type="uml:Enumeration" href="uml-dop.uml#_fAP_YFNNEfGiH6Q1wWpgzg"/>
+              </subViewComponentParts>
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_i33tYF1iEfG5yrHhaCd4cw" name="PRIVATE">
+                <type xsi:type="uml:Enumeration" href="uml-dop.uml#_fAP_YFNNEfGiH6Q1wWpgzg"/>
+              </subViewComponentParts>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0"/>
+        </viewElements>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_f_RpQF1aEfGZdpGuJqXIFA" name="Update TypeEventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0" modifies="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+        <annotations text="PUT"/>
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_2SJOYF1aEfGZdpGuJqXIFA" name="ModifiedActionEvent">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_6r5c4F1aEfGZdpGuJqXIFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_-vn6kF1mEfGmYLPV3LQ--Q" name="Delete TypeEventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_SqqFoF1nEfGmYLPV3LQ--Q" name="Success">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_X4eOUF1nEfGmYLPV3LQ--Q" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0"/>
+        </actionEvents>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
       </interactionFlowModelElement>
       <uses href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
     </interactionFlowModelElements>
@@ -122,4 +267,7 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_haU_sVNOEfGiH6Q1wWpgzg"/>
     </domainElements>
   </domainModel>
+  <viewpoints id="vp_CreateTypeEventCreation" name="CreateTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0"/>
+  <viewpoints id="vp_UpdateTypeEventCreation" name="UpdateTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0"/>
+  <viewpoints id="vp_DeleteTypeEventCreation" name="DeleteTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0"/>
 </core:IFMLModel>

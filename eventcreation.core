@@ -7,14 +7,30 @@
         <annotations text="/eventcreation"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0"/>
         <viewElementEvents id="_O_du4E4UEfGk1LLXzSRiFA" name="Add Event">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_RCn5cE4UEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_98RIUEicEfGehLgYsDeT5g" name="Table EventCreation">
           <viewElementEvents id="_O1YAsFOkEfGdleAigTRmcg" name="Detail">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_UM10oFOkEfGdleAigTRmcg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
-              <parameterBindingGroup id="_U01owFOkEfGdleAigTRmcg">
-                <parameterBindings id="_WSWIkFOkEfGdleAigTRmcg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
+              <parameterBindingGroup id="_KVDPwF0eEfGlIqyqqwXUBA">
+                <parameterBindings id="_Na5mYF0eEfGlIqyqqwXUBA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_C3UrMF0kEfGopNoBf7UyRw" name="Edit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_F0xTwF0kEfGopNoBf7UyRw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <parameterBindingGroup id="_ILX-wF0kEfGopNoBf7UyRw">
+                <parameterBindings id="_JMe2cF0kEfGopNoBf7UyRw" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_eG1-QF0pEfGopNoBf7UyRw" name="Delete">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_kS4pwF0pEfGopNoBf7UyRw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
+              <parameterBindingGroup id="_lQdFQF0pEfGopNoBf7UyRw">
+                <parameterBindings id="_mgH9YF0pEfGopNoBf7UyRw" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
@@ -40,6 +56,15 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_VRrUYF0pEfGopNoBf7UyRw" name="Delete EventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isModal="true">
+          <parameters id="_jjxEgF0qEfGopNoBf7UyRw" name="eventId"/>
+          <viewElements xsi:type="ext:Form" id="_JVyUsF0qEfGopNoBf7UyRw" name="Delete Event">
+            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_NsaWsF0qEfGopNoBf7UyRw" name="Remove">
+              <outInteractionFlows xsi:type="core:NavigationFlow" id="_YgY2oF0qEfGopNoBf7UyRw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
+            </viewElementEvents>
+            <viewComponentParts xsi:type="core:DataBinding" id="_l8Tz8F1QEfGopNoBf7UyRw" name="Detail EventCreation" uniformResourceIdentifier="call/eventcreation/detail"/>
+          </viewElements>
+        </viewElements>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_nN3egE4SEfGk1LLXzSRiFA" name="Add Event Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="/eventcreation/add"/>
@@ -50,16 +75,16 @@
           <viewComponentParts xsi:type="ext:SimpleField" id="_788VoE4SEfGk1LLXzSRiFA" name="Start Date">
             <annotations text="Required"/>
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_CqzUwE4TEfGk1LLXzSRiFA" name="startDate">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
             </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_Ie7PgE4TEfGk1LLXzSRiFA" name="End Date">
             <annotations text="Required"/>
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_MbOtAE4TEfGk1LLXzSRiFA" name="endDate">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
             </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_TMb7EE4TEfGk1LLXzSRiFA" name="Capacity">
             <annotations text="Required"/>
@@ -91,10 +116,10 @@
         </actionEvents>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_krHsUFOhEfGdleAigTRmcg" name="Detail EventCreation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/eventcreation/:eventId"/>
         <viewElements xsi:type="ext:Details" id="_lrxRAFOhEfGdleAigTRmcg" name="Detail TableEventCreation">
-          <annotations text="/TableEventCreation/:eventId"/>
-          <viewComponentParts xsi:type="core:DataBinding" id="_aZsDUFOiEfGdleAigTRmcg" name="Data Binding">
-            <parameters id="_un2JQFOjEfGdleAigTRmcg" name="eventId"/>
+          <parameters id="_R3DiQF0WEfGC-aehtwE1HQ" name="eventId"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_aZsDUFOiEfGdleAigTRmcg" name="Data Binding" uniformResourceIdentifier="call/eventcreation/detail">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_GU3NoFOjEfGdleAigTRmcg" name="eventId">
               <featureConcept href="main.core#//@domainModel/@domainElements.5"/>
             </subViewComponentParts>
@@ -115,6 +140,63 @@
             </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_mFcbQF0jEfGopNoBf7UyRw" name="Edit EventCreation Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/eventcreation/:eventId/edit"/>
+        <viewElements xsi:type="ext:Form" id="_SIbdwF0kEfGopNoBf7UyRw" name="Edit Event">
+          <parameters id="_bf6KgF0kEfGopNoBf7UyRw" name="eventId" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_02RgYF0lEfGopNoBf7UyRw" name="Update">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_MApVQF0mEfGopNoBf7UyRw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_mvwuIF0kEfGopNoBf7UyRw" name="Detail EventCreation" uniformResourceIdentifier="call/eventcreation/detail"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_1XpkkF0kEfGopNoBf7UyRw" name="Start Date">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_fUjEUF0lEfGopNoBf7UyRw" name="startDate">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_3OiNsF0kEfGopNoBf7UyRw" name="End Date">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_gKM58F0lEfGopNoBf7UyRw" name="endDate">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDate"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_45M_wF0kEfGopNoBf7UyRw" name="Capacity">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_hBtwwF0lEfGopNoBf7UyRw" name="capacity">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_64IKkF0kEfGopNoBf7UyRw" name="Name">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_i2gIIF0lEfGopNoBf7UyRw" name="name">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_8KS9EF0kEfGopNoBf7UyRw" name="Location">
+            <annotations text="Required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_jgqfcF0lEfGopNoBf7UyRw" name="location">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_HbYaUF0mEfGopNoBf7UyRw" name="Update EventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_OFBAwF0mEfGopNoBf7UyRw" name="Update">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_UPwrwF0mEfGopNoBf7UyRw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_RfNS4F0qEfGopNoBf7UyRw" name="Delete EventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <actionEvents id="_cex-0F0qEfGopNoBf7UyRw" name="Success">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_edcq8F0qEfGopNoBf7UyRw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
@@ -213,4 +295,7 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_DyL8MEiEEfGJlqplkR1iEg"/>
     </domainElements>
   </domainModel>
+  <viewpoints id="vp_CreateEventCreation" name="CreateEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
+  <viewpoints id="vp_UpdateEventCreation" name="UpdateEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0"/>
+  <viewpoints id="vp_DeleteEventCreation" name="DeleteEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0"/>
 </core:IFMLModel>

@@ -1,0 +1,30 @@
+{
+  "Attendee": [
+    "attendee.core",
+    "attendeedelta.core"
+  ],
+  "CheckIn": [
+    "checkin.core",
+    "checkindelta.core"
+  ],
+  "EventCreation": [
+    "eventcreation.core",
+    "eventcreationdelta.core"
+  ],
+  "TypeEventCreation": [
+    "eventcreation.core",
+    "typeeventcreation.core"
+  ],
+  "Notification": [
+    "notification.core",
+    "notificationdelta.core"
+  ],
+  "Report": [
+    "report.core",
+    "reportdelta.core"
+  ],
+  "Review": [
+    "review.core",
+    "reviewdelta.core"
+  ]
+}
