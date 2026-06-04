@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_t_YcUF8uEfGropGdd4B6sg" name="uml-dop">
+  <interactionFlowModel id="_t_YcUV8uEfGropGdd4B6sg">
+    <interactionFlowModelElements xsi:type="dop-extension:DeltaModuleDefinition" id="_t_YcU18uEfGropGdd4B6sg" name="ReviewAnonymous">
+      <inputPorts id="_ha9hIF_sEfGthe80Gdkcew" name="Input Port"/>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_t_ZqcF8uEfGropGdd4B6sg" name="Table ReviewAnonymous Page">
+        <annotations text="/reviewanonymous"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.8/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_t_nF018uEfGropGdd4B6sg" name="Add">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_t_nF1F8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="dop-extension:ModifiedList" id="_t_ZqcV8uEfGropGdd4B6sg" name="Table ReviewAnonymous">
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_t_g_MF8uEfGropGdd4B6sg" name="Detail">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_t_nF0F8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+              <parameterBindingGroup id="_t_nF0V8uEfGropGdd4B6sg">
+                <parameterBindings id="_t_nF0l8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0"/>
+          </viewElementEvents>
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_t_tMcV8uEfGropGdd4B6sg" name="Edit">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_t_tMcl8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_t_tMc18uEfGropGdd4B6sg">
+                <parameterBindings id="_t_tMdF8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2"/>
+          </viewElementEvents>
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_reviewAnonymousTableDeleteEvent" name="Delete">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_reviewAnonymousTableDeleteFlow" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
+              <parameterBindingGroup id="_reviewAnonymousTableDeleteBindingGroup">
+                <parameterBindings id="_reviewAnonymousTableDeleteBinding" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_t_Zqcl8uEfGropGdd4B6sg" name="reviewanonymous" uniformResourceIdentifier="call/reviewanonymous/list">
+            <parameters id="_t_Zqc18uEfGropGdd4B6sg" name="reviewId" direction="out"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_t_tzgF8uEfGropGdd4B6sg" name="Anonymous" featureConcept="//@domainModel/@domainElements.1"/>
+            <subViewComponentParts xsi:type="dop-extension:RemovedVisualizationAttribute" id="_t_zTEF8uEfGropGdd4B6sg" name="Attendeeid">
+              <removes href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.2"/>
+            </subViewComponentParts>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0"/>
+          </viewComponentParts>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_reviewAnonymousTableDeleteWindow" name="Konfirmasi Hapus Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isModal="true">
+          <parameters id="_reviewAnonymousTableDeleteReviewId" name="reviewId"/>
+          <viewElements xsi:type="ext:Form" id="_reviewAnonymousTableDeleteForm" name="Delete ReviewAnonymous">
+            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_reviewAnonymousTableDeleteSubmit" name="Konfirmasi">
+              <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_reviewAnonymousTableDeleteSubmitFlow" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+                <parameterBindingGroup id="_reviewAnonymousTableDeleteSubmitBindingGroup">
+                  <parameterBindings id="_reviewAnonymousTableDeleteSubmitBinding" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@parameters.0"/>
+                </parameterBindingGroup>
+              </outInteractionFlows>
+            </viewElementEvents>
+            <viewComponentParts xsi:type="core:DataBinding" id="_reviewAnonymousTableDeleteDetailBinding" name="Detail ReviewAnonymous" uniformResourceIdentifier="call/reviewanonymous/detail">
+              <parameters id="_reviewAnonymousTableDeleteDetailParam" name="reviewId"/>
+            </viewComponentParts>
+          </viewElements>
+        </viewElements>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_t_7O4F8uEfGropGdd4B6sg" name="Detail ReviewAnonymous Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/reviewanonymous/:reviewId"/>
+        <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_t_7O4V8uEfGropGdd4B6sg" name="Kembali">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_t_7O4l8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="dop-extension:ModifiedDetail" id="_uACjoF8uEfGropGdd4B6sg" name="Detail ReviewAnonymous">
+          <parameters id="_uACjoV8uEfGropGdd4B6sg" name="reviewId"/>
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_uACjo18uEfGropGdd4B6sg" name="Delete">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uACjpF8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1">
+              <parameterBindingGroup id="_uACjpV8uEfGropGdd4B6sg">
+                <parameterBindings id="_uACjpl8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_uACjol8uEfGropGdd4B6sg" name="Detail ReviewAnonymous" uniformResourceIdentifier="call/reviewanonymous/detail">
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_uADKsF8uEfGropGdd4B6sg" name="Anonymous" featureConcept="//@domainModel/@domainElements.1"/>
+            <subViewComponentParts xsi:type="dop-extension:RemovedVisualizationAttribute" id="_uADKsV8uEfGropGdd4B6sg" name="Attendeeid">
+              <removes href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.2"/>
+            </subViewComponentParts>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewComponentParts.0"/>
+          </viewComponentParts>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_uACjqV8uEfGropGdd4B6sg" name="Konfirmasi Hapus ReviewAnonymous" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0" isModal="true">
+          <parameters id="_uACjp18uEfGropGdd4B6sg" name="reviewId"/>
+          <viewElements xsi:type="ext:Form" id="_reviewAnonymousDeleteForm" name="Delete ReviewAnonymous">
+            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uACjql8uEfGropGdd4B6sg" name="Konfirmasi">
+              <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uACjq18uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+                <parameterBindingGroup id="_uACjrF8uEfGropGdd4B6sg">
+                  <parameterBindings id="_uACjrV8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@parameters.0"/>
+                </parameterBindingGroup>
+              </outInteractionFlows>
+            </viewElementEvents>
+            <viewComponentParts xsi:type="core:DataBinding" id="_reviewAnonymousDeleteDetailBinding" name="Detail ReviewAnonymous" uniformResourceIdentifier="call/reviewanonymous/detail">
+              <parameters id="_reviewAnonymousDeleteDetailParam" name="reviewId"/>
+            </viewComponentParts>
+          </viewElements>
+        </viewElements>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_uAEY0F8uEfGropGdd4B6sg" name="Delete ReviewAnonymous" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_uAEY0V8uEfGropGdd4B6sg" name="reviewId"/>
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_uALGgF8uEfGropGdd4B6sg" name="then">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uALGgV8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0"/>
+        </actionEvents>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_uALtkF8uEfGropGdd4B6sg" name="Add ReviewAnonymous Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/reviewanonymous/add"/>
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_uALtkV8uEfGropGdd4B6sg" name="Add ReviewAnonymous">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uALtkl8uEfGropGdd4B6sg" name="Submit">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uALtk18uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:AddedSimpleField" id="_uAMUoF8uEfGropGdd4B6sg" name="Anonymous">
+            <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_uAMUoV8uEfGropGdd4B6sg" name="anonymous">
+              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+            </subViewComponentParts>
+            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_reviewAnonymousEventListData" name="Event List Data" uniformResourceIdentifier="call/eventcreation/list">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.2"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_reviewAnonymousAttendeListData" name="Attende List Data" uniformResourceIdentifier="call/attendeemanagement/list">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.3"/>
+          </viewComponentParts>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0"/>
+        </viewElements>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_uAM7sF8uEfGropGdd4B6sg" name="Save ReviewAnonymous" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_uAM7sV8uEfGropGdd4B6sg" name="then">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uAM7sl8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0"/>
+        </actionEvents>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_uAM7s18uEfGropGdd4B6sg" name="Edit ReviewAnonymous Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/reviewanonymous/:reviewId/edit"/>
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_uAM7tF8uEfGropGdd4B6sg" name="Edit ReviewAnonymous">
+          <parameters id="_reviewAnonymousEditFormReviewId" name="reviewId" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uAM7t18uEfGropGdd4B6sg" name="Submit">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uAM7uF8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6">
+              <parameterBindingGroup id="_uAM7uV8uEfGropGdd4B6sg">
+                <parameterBindings id="_uAM7ul8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_uAM7tV8uEfGropGdd4B6sg" name="ReviewAnonymous Data" uniformResourceIdentifier="call/reviewanonymous/detail">
+            <parameters id="_uAM7tl8uEfGropGdd4B6sg" name="reviewId" direction="inout"/>
+            <subViewComponentParts xsi:type="dop-extension:AddedSimpleField" id="_uAM7u18uEfGropGdd4B6sg" name="Anonymous">
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_uAM7vF8uEfGropGdd4B6sg" name="anonymous"/>
+            </subViewComponentParts>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@viewComponentParts.0"/>
+          </viewComponentParts>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0"/>
+        </viewElements>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_uAM7vV8uEfGropGdd4B6sg" name="Update ReviewAnonymous" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <parameters id="_uAM7vl8uEfGropGdd4B6sg" name="reviewId"/>
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_uAM7v18uEfGropGdd4B6sg" name="then">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uAM7wF8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0"/>
+        </actionEvents>
+        <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
+      </interactionFlowModelElement>
+      <uses href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_t_YcUl8uEfGropGdd4B6sg">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_uAOw4F8uEfGropGdd4B6sg" name="ReviewImpl">
+      <classifier xsi:type="uml:Class" href="uml-dop.uml#_vcJGEFN5EfGht6kfuK0zbw"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_t_tzgV8uEfGropGdd4B6sg" name="anonymous">
+      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_0-xBIFN5EfGht6kfuK0zbw"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>

@@ -26,5 +26,9 @@
   "Review": [
     "review.core",
     "reviewdelta.core"
+  ],
+  "ReviewAnonymous": [
+    "review.core",
+    "reviewanonymous.core"
   ]
 }

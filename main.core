@@ -58,6 +58,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_x7ie4F_pEfG5cYEsm7PDBA" name="ReviewAnonymous">
+      <annotations text="ReviewAnonymous"/>
+      <viewElementEvents id="_v2eIcF_sEfGthe80Gdkcew" name="ReviewAnonymous">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ypBvoF_sEfGthe80Gdkcew">
+          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="reviewanonymous.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_VJdiUEiKEfGJlqplkR1iEg">
     <domainElements xsi:type="core:UMLDomainConcept" id="_VJ5AIEiKEfGJlqplkR1iEg" name="CheckInImpl">

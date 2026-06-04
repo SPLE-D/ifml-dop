@@ -138,7 +138,7 @@
         </viewElements>
         <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_f_RpQF1aEfGZdpGuJqXIFA" name="Update TypeEventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0" modifies="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_f_RpQF1aEfGZdpGuJqXIFA" name="Update TypeEventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="PUT"/>
         <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_2SJOYF1aEfGZdpGuJqXIFA" name="ModifiedActionEvent">
           <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_6r5c4F1aEfGZdpGuJqXIFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
@@ -146,6 +146,7 @@
           </outInteractionFlows>
           <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0"/>
         </actionEvents>
+        <modifies href="eventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_-vn6kF1mEfGmYLPV3LQ--Q" name="Delete TypeEventCreation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="DELETE"/>
@@ -267,7 +268,4 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_haU_sVNOEfGiH6Q1wWpgzg"/>
     </domainElements>
   </domainModel>
-  <viewpoints id="vp_CreateTypeEventCreation" name="CreateTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0"/>
-  <viewpoints id="vp_UpdateTypeEventCreation" name="UpdateTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0"/>
-  <viewpoints id="vp_DeleteTypeEventCreation" name="DeleteTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0"/>
 </core:IFMLModel>

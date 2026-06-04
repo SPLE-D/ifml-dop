@@ -1,162 +1,179 @@
-<?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_t2kaoEidEfGehLgYsDeT5g">
-  <interactionFlowModel id="_0GlnMEidEfGehLgYsDeT5g">
-    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_0Gp4oEidEfGehLgYsDeT5g" name="Review">
-      <inputPorts id="_Gh3CsE4PEfGk1LLXzSRiFA" name="Input Port"/>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_3irTkEidEfGehLgYsDeT5g" name="Table Review Page">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_t4vo0F8uEfGropGdd4B6sg" name="uml-dop">
+  <interactionFlowModel id="_t4vo0V8uEfGropGdd4B6sg">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_t4vo018uEfGropGdd4B6sg" name="Review">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="VC_Review" name="Table Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0">
         <annotations text="/review"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.6/@viewElementEvents.0/@outInteractionFlows.0"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
-        <viewElementEvents id="_LxdwkE4OEfGk1LLXzSRiFA" name="Add Review">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_OM4qIE4OEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        <viewElementEvents id="_t4vo8F8uEfGropGdd4B6sg" name="Add">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo8V8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3"/>
         </viewElementEvents>
-        <viewElements xsi:type="ext:List" id="_7uS_cEidEfGehLgYsDeT5g" name="Table Review">
-          <viewComponentParts xsi:type="core:DataBinding" id="_CP9VoEieEfGehLgYsDeT5g" name="List Review" uniformResourceIdentifier="call/review/list">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Gqve4EieEfGehLgYsDeT5g" name="rating">
-              <featureConcept href="main.core#//@domainModel/@domainElements.29"/>
-            </subViewComponentParts>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_HqS3YEieEfGehLgYsDeT5g" name="comment">
-              <featureConcept href="main.core#//@domainModel/@domainElements.30"/>
-            </subViewComponentParts>
-          </viewComponentParts>
-        </viewElements>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_KWjHME4NEfGk1LLXzSRiFA" name="Add Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/review/add"/>
-        <viewElements xsi:type="ext:Form" id="_NPJsAE4NEfGk1LLXzSRiFA" name="Add Review">
-          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_AbIKcE4OEfGk1LLXzSRiFA" name="Save">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_HV9OkE4OEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+        <viewElements xsi:type="ext:List" id="_t4vo1V8uEfGropGdd4B6sg" name="Table Review">
+          <viewElementEvents id="_t4vo2V8uEfGropGdd4B6sg" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo2l8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+              <parameterBindingGroup id="_t4vo218uEfGropGdd4B6sg">
+                <parameterBindings id="_t4vo3F8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_QGHSEE4NEfGk1LLXzSRiFA" name="Event ID">
-            <annotations text="Required"/>
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_T21xsE4NEfGk1LLXzSRiFA" name="eventId">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <viewElementEvents id="_t4vo3V8uEfGropGdd4B6sg" name="Delete">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo3l8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
+              <parameterBindingGroup id="_t4vo318uEfGropGdd4B6sg">
+                <parameterBindings id="_t4vo4F8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_t4vo-V8uEfGropGdd4B6sg" name="Edit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo-l8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_t4vo-18uEfGropGdd4B6sg">
+                <parameterBindings id="_t4vo_F8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_t4vo1l8uEfGropGdd4B6sg" name="List Review" uniformResourceIdentifier="call/review/list">
+            <parameters id="_t4vo118uEfGropGdd4B6sg" name="reviewId" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t4wP4F8uEfGropGdd4B6sg" name="Reviewid" featureConcept="//@domainModel/@domainElements.1"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t4wP4l8uEfGropGdd4B6sg" name="Eventid" featureConcept="//@domainModel/@domainElements.2"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t4w28F8uEfGropGdd4B6sg" name="Attendeeid" featureConcept="//@domainModel/@domainElements.3"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t4w28l8uEfGropGdd4B6sg" name="Rating" featureConcept="//@domainModel/@domainElements.4"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t4w29F8uEfGropGdd4B6sg" name="Comment" featureConcept="//@domainModel/@domainElements.5"/>
           </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_ZW9yYE4NEfGk1LLXzSRiFA" name="Attendee ID">
-            <annotations text="Required"/>
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_cEr84E4NEfGk1LLXzSRiFA" name="attendeeId">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_hbqBkE4NEfGk1LLXzSRiFA" name="Rating">
-            <annotations text="Required"/>
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_lEty8E4NEfGk1LLXzSRiFA" name="rating">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_xG2IEE4NEfGk1LLXzSRiFA" name="Comment">
-            <annotations text="Required"/>
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_0E0VEE4NEfGk1LLXzSRiFA" name="comment">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </viewElements>
+        <viewElements xsi:type="ext:IFMLWindow" id="_t4vo4V8uEfGropGdd4B6sg" name="Konfirmasi Hapus Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0" isModal="true">
+          <parameters id="_t4vo2F8uEfGropGdd4B6sg" name="reviewId"/>
+          <viewElements xsi:type="ext:Form" id="_reviewDeleteForm" name="Delete Review">
+            <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_t4vo4l8uEfGropGdd4B6sg" name="Konfirmasi">
+              <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo418uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+                <parameterBindingGroup id="_t4vo5F8uEfGropGdd4B6sg">
+                  <parameterBindings id="_t4vo5V8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@parameters.0"/>
+                </parameterBindingGroup>
+              </outInteractionFlows>
+            </viewElementEvents>
+            <viewComponentParts xsi:type="core:DataBinding" id="_reviewDeleteDetailBinding" name="Detail Review" uniformResourceIdentifier="call/review/detail">
+              <parameters id="_reviewDeleteDetailParam" name="reviewId"/>
+            </viewComponentParts>
+          </viewElements>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_t4vo6l8uEfGropGdd4B6sg" name="Detail Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/review/:reviewId"/>
+        <viewElementEvents id="_t4vo618uEfGropGdd4B6sg" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo7F8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_t4vo7V8uEfGropGdd4B6sg" name="Detail Review">
+          <parameters id="_t4vo7l8uEfGropGdd4B6sg" name="reviewId"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_t4vo718uEfGropGdd4B6sg" name="Detail Review" uniformResourceIdentifier="call/review/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t429kF8uEfGropGdd4B6sg" name="Reviewid" featureConcept="//@domainModel/@domainElements.1"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t43koF8uEfGropGdd4B6sg" name="Eventid" featureConcept="//@domainModel/@domainElements.2"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t43koV8uEfGropGdd4B6sg" name="Attendeeid" featureConcept="//@domainModel/@domainElements.3"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t43kol8uEfGropGdd4B6sg" name="Rating" featureConcept="//@domainModel/@domainElements.4"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_t43ko18uEfGropGdd4B6sg" name="Comment" featureConcept="//@domainModel/@domainElements.5"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_9A44ME4NEfGk1LLXzSRiFA" name="Save Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_t4vo5l8uEfGropGdd4B6sg" name="Delete Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_t4vo518uEfGropGdd4B6sg" name="reviewId"/>
+        <actionEvents id="_t4vo6F8uEfGropGdd4B6sg" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo6V8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_t4vo8l8uEfGropGdd4B6sg" name="Add Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/review/add"/>
+        <viewElements xsi:type="ext:Form" id="_t4vo818uEfGropGdd4B6sg" name="Add Review">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_t4vo9F8uEfGropGdd4B6sg" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo9V8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_t43kql8uEfGropGdd4B6sg" name="Rating">
+            <annotations text="required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t43kq18uEfGropGdd4B6sg" name="rating"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_t43krF8uEfGropGdd4B6sg" name="Comment">
+            <annotations text="required"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t43krV8uEfGropGdd4B6sg" name="comment"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:DataBinding" id="_z7cgMF8wEfGcFsb0pw-BVw" name="Event List Data" uniformResourceIdentifier="call/eventcreation/list">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_jBY9YF8xEfGcFsb0pw-BVw" name="Event Name">
+              <annotations text="required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Mw9WUF8zEfGcFsb0pw-BVw" name="eventId" direction="out"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_oVsdsF8zEfGcFsb0pw-BVw" name="name"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:DataBinding" id="_B3juYF80EfGcFsb0pw-BVw" name="Attende List Data" uniformResourceIdentifier="call/attendeemanagement/list">
+            <annotations text="required"/>
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_JihO8F80EfGcFsb0pw-BVw" name="Attende Name">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_KkfCQF80EfGcFsb0pw-BVw" name="attendeeId" direction="out"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Q6VKAF80EfGcFsb0pw-BVw" name="email"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_t4vo9l8uEfGropGdd4B6sg" name="Save Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
-        <actionEvents id="_Iy34gE4OEfGk1LLXzSRiFA">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_LMYtkE4OEfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        <actionEvents id="_t4vo918uEfGropGdd4B6sg" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vo-F8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_t4vo_V8uEfGropGdd4B6sg" name="Edit Review Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0">
+        <annotations text="/review/:reviewId/edit"/>
+        <viewElements xsi:type="ext:Form" id="_t4vo_l8uEfGropGdd4B6sg" name="Edit Review">
+          <parameters id="_t4vpAF8uEfGropGdd4B6sg" name="reviewId" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_t4vpAV8uEfGropGdd4B6sg" name="Submit">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vpAl8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6">
+              <parameterBindingGroup id="_t4vpA18uEfGropGdd4B6sg">
+                <parameterBindings id="_t4vpBF8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_t4vo_18uEfGropGdd4B6sg" name="Review Data" uniformResourceIdentifier="call/review/detail">
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_t44LsF8uEfGropGdd4B6sg" name="Reviewid">
+              <annotations text="required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t44LsV8uEfGropGdd4B6sg" name="reviewId"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_t44Lsl8uEfGropGdd4B6sg" name="Eventid">
+              <annotations text="required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t44Ls18uEfGropGdd4B6sg" name="eventId"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_t44LtF8uEfGropGdd4B6sg" name="Attendeeid">
+              <annotations text="required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t44LtV8uEfGropGdd4B6sg" name="attendeeId"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_t44Ltl8uEfGropGdd4B6sg" name="Rating">
+              <annotations text="required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t44Lt18uEfGropGdd4B6sg" name="rating"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_t44LuF8uEfGropGdd4B6sg" name="Comment">
+              <annotations text="required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_t44LuV8uEfGropGdd4B6sg" name="comment"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_t4vpBV8uEfGropGdd4B6sg" name="Update Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <parameters id="_t4vpBl8uEfGropGdd4B6sg" name="reviewId"/>
+        <actionEvents id="_t4vpB18uEfGropGdd4B6sg" name="then">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_t4vpCF8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
-  <domainModel id="_t2kaoUidEfGehLgYsDeT5g">
-    <domainElements xsi:type="core:UMLDomainConcept" id="_t2wA0EidEfGehLgYsDeT5g" name="CheckInImpl">
-      <classifier xsi:type="uml:Class" href="uml-dop.uml#_Z6wdcEMAEfG1Y49jyyuFTQ"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2wn4EidEfGehLgYsDeT5g" name="checkInId">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_kf_90EMAEfG1Y49jyyuFTQ"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2wn4UidEfGehLgYsDeT5g" name="attended">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_ED5pcEMBEfG1Y49jyyuFTQ"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_t2wn4kidEfGehLgYsDeT5g" name="checkIn">
-      <behavioralFeature xsi:type="uml:Operation" href="uml-dop.uml#_WbUssEMBEfG1Y49jyyuFTQ"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_t2wn40idEfGehLgYsDeT5g" name="EventCreationImpl">
-      <classifier xsi:type="uml:Class" href="uml-dop.uml#_QNvkkEMLEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2wn5EidEfGehLgYsDeT5g" name="eventId">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_oteC0EMLEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2wn5UidEfGehLgYsDeT5g" name="startDate">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_-apg8EMLEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2wn5kidEfGehLgYsDeT5g" name="endDate">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_Z5liUEMMEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO8EidEfGehLgYsDeT5g" name="capacity">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_d4x7wEMMEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO8UidEfGehLgYsDeT5g" name="name">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_iqQGsEMMEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO8kidEfGehLgYsDeT5g" name="location">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_o5yLEEMMEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_t2xO80idEfGehLgYsDeT5g" name="AttendeeManagementImpl">
-      <classifier xsi:type="uml:Class" href="uml-dop.uml#_HMX_0EMNEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO9EidEfGehLgYsDeT5g" name="attendeeId">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_g6-sAEMNEfGD1KWMcrYNXA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO9UidEfGehLgYsDeT5g" name="phoneNumber">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_IIXmoEMQEfGL-cguweMm8g"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO9kidEfGehLgYsDeT5g" name="email">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_GM1kQEiFEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_t2xO90idEfGehLgYsDeT5g" name="NotificationImpl">
-      <classifier xsi:type="uml:Class" href="uml-dop.uml#_EJvGgEMTEfGYX-lsrzzLvA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO-EidEfGehLgYsDeT5g" name="notifiationId">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_rPttYEMcEfGYX-lsrzzLvA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO-UidEfGehLgYsDeT5g" name="content">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_3e2s4EiEEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLBehavioralFeature" id="_t2xO-kidEfGehLgYsDeT5g" name="sendNotification">
-      <behavioralFeature xsi:type="uml:Operation" href="uml-dop.uml#_AJcrcEMUEfGYX-lsrzzLvA"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_t2xO-0idEfGehLgYsDeT5g" name="ReportImpl">
-      <classifier xsi:type="uml:Class" href="uml-dop.uml#_GN0jEEiCEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO_EidEfGehLgYsDeT5g" name="reportId">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_UeGKwEiCEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO_UidEfGehLgYsDeT5g" name="eventId">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_O5xUoEiEEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO_kidEfGehLgYsDeT5g" name="totalAttendee">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_SCsNYEiEEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xO_0idEfGehLgYsDeT5g" name="totalRevenue">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_YVmV4EiEEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xPAEidEfGehLgYsDeT5g" name="summary">
-      <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_dr-ksEiEEfGJlqplkR1iEg"/>
-    </domainElements>
-    <domainElements xsi:type="core:UMLDomainConcept" id="_t2xPAUidEfGehLgYsDeT5g" name="ReviewImpl">
+  <domainModel id="_t4vo0l8uEfGropGdd4B6sg">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_t44ywF8uEfGropGdd4B6sg" name="ReviewImpl">
       <classifier xsi:type="uml:Class" href="uml-dop.uml#_1Dhk0EiCEfGJlqplkR1iEg"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xPAkidEfGehLgYsDeT5g" name="reviewId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_t4wP4V8uEfGropGdd4B6sg" name="reviewId">
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#__pA80EiCEfGJlqplkR1iEg"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xPA0idEfGehLgYsDeT5g" name="eventId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_t4wP418uEfGropGdd4B6sg" name="eventId">
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_rgXXEEiDEfGJlqplkR1iEg"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xPBEidEfGehLgYsDeT5g" name="attendeeId">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_t4w28V8uEfGropGdd4B6sg" name="attendeeId">
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_4k49UEiDEfGJlqplkR1iEg"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xPBUidEfGehLgYsDeT5g" name="rating">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_t4w2818uEfGropGdd4B6sg" name="rating">
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_-pAb4EiDEfGJlqplkR1iEg"/>
     </domainElements>
-    <domainElements xsi:type="core:UMLStructuralFeature" id="_t2xPBkidEfGehLgYsDeT5g" name="comment">
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_t4w29V8uEfGropGdd4B6sg" name="comment">
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_DyL8MEiEEfGJlqplkR1iEg"/>
     </domainElements>
   </domainModel>
