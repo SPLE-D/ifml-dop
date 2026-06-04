@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_-RIaAFOdEfGSG_Al1Huxcg">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_-RIaAFOdEfGSG_Al1Huxcg">
   <interactionFlowModel id="_n-fo8FOeEfGSG_Al1Huxcg">
     <interactionFlowModelElements xsi:type="dop-extension:DeltaModuleDefinition" id="_n-vgkFOeEfGSG_Al1Huxcg" name="PriorityReport">
-      <annotations text="/priorityreport"/>
       <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_zoCCcFOfEfGSG_Al1Huxcg" name="Table PriorityReport Page">
+        <annotations text="/priorityreport"/>
+        <inInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.7/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_pl_8gFUCEfGWdYor1mwsjg" name="Add PriorityReport">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_0iffQFUCEfGWdYor1mwsjg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+            <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0"/>
+        </viewElementEvents>
         <viewElements xsi:type="dop-extension:ModifiedList" id="_bm3BEFOiEfGSG_Al1Huxcg" name="Table PriorityReport">
-          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_j4YLUFOiEfGSG_Al1Huxcg" name="List PriorityReport"/>
+          <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_j4YLUFOiEfGSG_Al1Huxcg" name="List PriorityReport" uniformResourceIdentifier="call/priorityreport/list">
+            <subViewComponentParts xsi:type="dop-extension:AddedVisualizationAttribute" id="_brnXMFUAEfGWdYor1mwsjg" name="PriorityReport"/>
+            <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0"/>
+          </viewComponentParts>
+          <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
         </viewElements>
         <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_81q9wFT_EfGWdYor1mwsjg" name="Add PriorityReport Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/priorityreport/add"/>
+        <viewElements xsi:type="dop-extension:ModifiedForm" id="_KLGt0FUAEfGWdYor1mwsjg" name="Add PriorityReport">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uc6YEFZ2EfG2IPAwKxqHFA" name="OnSubmit Event">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_0WA5cFZ2EfG2IPAwKxqHFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+              <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="dop-extension:AddedDataBinding" id="_mFJ94FUAEfGWdYor1mwsjg" name="Added Data Binding" uniformResourceIdentifier="call/priorityreport/list">
+            <subViewComponentParts xsi:type="dop-extension:AddedSelectionField" id="_CX_E4FUCEfGWdYor1mwsjg" name="PriorityReport">
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_NvZCAFUCEfGWdYor1mwsjg" name="PriorityReport"/>
+              <subViewComponentParts xsi:type="dop-extension:AddedSlot" id="_OpZMIFUCEfGWdYor1mwsjg" name="PriorityReport" direction="out"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
+        </viewElements>
+        <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedAction" id="_EKdSoFUDEfGWdYor1mwsjg" name="Save PriorityReport" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <actionEvents xsi:type="dop-extension:ModifiedActionEvent" id="_VBhWYFUDEfGWdYor1mwsjg" name="ModifiedActionEvent">
+          <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_e5dRQFZ2EfG2IPAwKxqHFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0">
+            <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+          </outInteractionFlows>
+          <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0"/>
+        </actionEvents>
+        <modifies href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
       </interactionFlowModelElement>
       <uses href="report.core#//@interactionFlowModel/@interactionFlowModelElements.0"/>
     </interactionFlowModelElements>
