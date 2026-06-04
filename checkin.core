@@ -136,4 +136,5 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_DyL8MEiEEfGJlqplkR1iEg"/>
     </domainElements>
   </domainModel>
+  <viewpoints id="_createCheckInViewpoint" name="CreateCheckIn" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
 </core:IFMLModel>

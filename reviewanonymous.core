@@ -26,15 +26,6 @@
             </outInteractionFlows>
             <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0"/>
           </viewElementEvents>
-          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_t_tMcV8uEfGropGdd4B6sg" name="Edit">
-            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_t_tMcl8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
-              <parameterBindingGroup id="_t_tMc18uEfGropGdd4B6sg">
-                <parameterBindings id="_t_tMdF8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0"/>
-              </parameterBindingGroup>
-              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0"/>
-            </outInteractionFlows>
-            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2"/>
-          </viewElementEvents>
           <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_reviewAnonymousTableDeleteEvent" name="Delete">
             <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_reviewAnonymousTableDeleteFlow" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1">
               <parameterBindingGroup id="_reviewAnonymousTableDeleteBindingGroup">
@@ -43,6 +34,15 @@
               <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0"/>
             </outInteractionFlows>
             <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1"/>
+          </viewElementEvents>
+          <viewElementEvents xsi:type="dop-extension:ModifiedViewElementEvent" id="_t_tMcV8uEfGropGdd4B6sg" name="Edit">
+            <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_t_tMcl8uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_t_tMc18uEfGropGdd4B6sg">
+                <parameterBindings id="_t_tMdF8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+              <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0"/>
+            </outInteractionFlows>
+            <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2"/>
           </viewElementEvents>
           <viewComponentParts xsi:type="dop-extension:ModifiedDataBinding" id="_t_Zqcl8uEfGropGdd4B6sg" name="reviewanonymous" uniformResourceIdentifier="call/reviewanonymous/list">
             <parameters id="_t_Zqc18uEfGropGdd4B6sg" name="reviewId" direction="out"/>
@@ -54,7 +54,7 @@
           </viewComponentParts>
           <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0"/>
         </viewElements>
-        <viewElements xsi:type="ext:IFMLWindow" id="_reviewAnonymousTableDeleteWindow" name="Konfirmasi Hapus Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0" isModal="true">
+        <viewElements xsi:type="ext:IFMLWindow" id="_reviewAnonymousTableDeleteWindow" name="Konfirmasi Hapus Review" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0" isModal="true">
           <parameters id="_reviewAnonymousTableDeleteReviewId" name="reviewId"/>
           <viewElements xsi:type="ext:Form" id="_reviewAnonymousTableDeleteForm" name="Delete ReviewAnonymous">
             <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_reviewAnonymousTableDeleteSubmit" name="Konfirmasi">
@@ -159,7 +159,7 @@
         </actionEvents>
         <modifies href="review.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
       </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_uAM7s18uEfGropGdd4B6sg" name="Edit ReviewAnonymous Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+      <interactionFlowModelElement xsi:type="dop-extension:ModifiedViewContainer" id="_uAM7s18uEfGropGdd4B6sg" name="Edit ReviewAnonymous Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2/@outInteractionFlows.0">
         <annotations text="/reviewanonymous/:reviewId/edit"/>
         <viewElements xsi:type="dop-extension:ModifiedForm" id="_uAM7tF8uEfGropGdd4B6sg" name="Edit ReviewAnonymous">
           <parameters id="_reviewAnonymousEditFormReviewId" name="reviewId" direction="inout"/>
@@ -204,4 +204,7 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_0-xBIFN5EfGht6kfuK0zbw"/>
     </domainElements>
   </domainModel>
+  <viewpoints id="_createReviewAnonymousViewpoint" name="CreateReviewAnonymous" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0"/>
+  <viewpoints id="_updateReviewAnonymousViewpoint" name="UpdateReviewAnonymous" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0"/>
+  <viewpoints id="_deleteReviewAnonymousViewpoint" name="DeleteReviewAnonymous" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@viewElements.0"/>
 </core:IFMLModel>

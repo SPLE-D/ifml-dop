@@ -51,12 +51,12 @@
             </subViewComponentParts>
             <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_pT_MkE4JEfGk1LLXzSRiFA" name="Event ID">
-            <annotations text="Required"/>
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_1GGIsE4JEfGk1LLXzSRiFA" name="eventId">
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_z7cgMF8wEfGk1LLXzSRiFA_report" name="Event List Data" uniformResourceIdentifier="call/eventcreation/list">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_jBY9YF8xEfGk1LLXzSRiFA_report" name="Event Name">
+              <annotations text="Required"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Mw9WUF8zEfGk1LLXzSRiFA_report" name="eventId" direction="out"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_oVsdsF8zEfGk1LLXzSRiFA_report" name="name"/>
             </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
@@ -163,4 +163,5 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_DyL8MEiEEfGJlqplkR1iEg"/>
     </domainElements>
   </domainModel>
+  <viewpoints id="_createReportViewpoint" name="CreateReport" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
 </core:IFMLModel>

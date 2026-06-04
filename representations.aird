@@ -56,7 +56,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="typeeventcreation.core#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Y2GrgF_pEfG5cYEsm7PDBA" name="ReviewAnonymous" repPath="#_Y2DBIF_pEfG5cYEsm7PDBA" changeId="1780566926159">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Y2GrgF_pEfG5cYEsm7PDBA" name="ReviewAnonymous" repPath="#_Y2DBIF_pEfG5cYEsm7PDBA" changeId="1780588350090">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="reviewanonymous.core#/"/>
       </ownedRepresentationDescriptors>
@@ -22009,7 +22009,14 @@
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Y5gk0F_pEfG5cYEsm7PDBA" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Y5gk0V_pEfG5cYEsm7PDBA"/>
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Y5gk0V_pEfG5cYEsm7PDBA">
+        <computedStyleDescriptions xmi:type="style:FlatContainerStyleDescription" xmi:id="_Y5ovwGAtEfGj2PZNK1P_pg" arcWidth="1" arcHeight="1" borderSizeComputationExpression="1" labelSize="9" showIcon="false" labelExpression="aql:'«' + self.eClass().name + '» '  + self.name" tooltipExpression="aql: self.eClass().name + ' ' + self.name">
+          <borderColor xmi:type="description:UserFixedColor" href="platform:/plugin/id.ac.ui.cs.prices.ifmldop.editor.design/description/dop_extension.odesign#//@userColorsPalettes[name='DOP%20Palette']/@entries[name='Green%20for%20Delta']"/>
+          <labelColor xmi:type="description:UserFixedColor" href="platform:/plugin/id.ac.ui.cs.prices.ifmldop.editor.design/description/dop_extension.odesign#//@userColorsPalettes[name='DOP%20Palette']/@entries[name='Green%20for%20Delta']"/>
+          <backgroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          <foregroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+        </computedStyleDescriptions>
+      </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_Y4MWMF_pEfG5cYEsm7PDBA" name="Attendee" width="8" height="8" resizeKind="NSEW">
       <target xmi:type="core:Annotation" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@annotations.0"/>
@@ -22854,9 +22861,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModuleDefinition']/@borderedNodeMappings[name='InputPort']"/>
       </ownedBorderedNodes>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_9WnzYV_vEfGthe80Gdkcew" labelSize="9" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="209,209,209">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModuleDefinition']/@style"/>
-      </ownedStyle>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Y5uPUWAtEfGj2PZNK1P_pg" labelSize="9" showIcon="false" labelColor="0,128,128" description="_Y5ovwGAtEfGj2PZNK1P_pg" borderSize="1" borderSizeComputationExpression="1" borderColor="0,128,128" backgroundColor="209,209,209"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ModuleDefinition']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Y5wccF_pEfG5cYEsm7PDBA" name=" «ModifiedViewContainer» Table ReviewAnonymous Page" tooltipText="ModifiedViewContainer Table ReviewAnonymous Page" outgoingEdges="_Y_OLQF_pEfG5cYEsm7PDBA" incomingEdges="_Y93gal_pEfG5cYEsm7PDBA _Y94ujl_pEfG5cYEsm7PDBA _Y95VmV_pEfG5cYEsm7PDBA _Y958pV_pEfG5cYEsm7PDBA" width="30" height="20">
         <target xmi:type="dop-extension:ModifiedViewContainer" href="reviewanonymous.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
