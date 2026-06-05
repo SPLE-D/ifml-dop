@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:dop-extension="http://amanah.cs.ui.ac.id/ifml/dop" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_VJW0oEiKEfGJlqplkR1iEg" name="Attendee">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_VJW0oEiKEfGJlqplkR1iEg" name="Attendee">
   <interactionFlowModel id="_1YPW8EiKEfGJlqplkR1iEg">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_1YsC4EiKEfGJlqplkR1iEg" name="Home" isXOR="true"/>
     <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_xBloUEihEfGehLgYsDeT5g" name="Attendee">
@@ -50,21 +50,9 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_knPHUFOgEfGdleAigTRmcg" name="TypeEventCreation">
-      <annotations text="TypeEventCreation"/>
-      <viewElementEvents id="_tvGqwFOgEfGdleAigTRmcg" name="TypeEventCreation">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_AuUGwFOhEfGdleAigTRmcg">
-          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="typeeventcreation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
-        </outInteractionFlows>
-      </viewElementEvents>
-    </interactionFlowModelElements>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_x7ie4F_pEfG5cYEsm7PDBA" name="ReviewAnonymous">
-      <annotations text="ReviewAnonymous"/>
-      <viewElementEvents id="_v2eIcF_sEfGthe80Gdkcew" name="ReviewAnonymous">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ypBvoF_sEfGthe80Gdkcew">
-          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="reviewanonymous.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
-        </outInteractionFlows>
-      </viewElementEvents>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_xXSUUGCDEfGb1aztxOhVmQ" name="PriorityReport">
+      <annotations text="PriorityReport"/>
+      <viewElementEvents id="_C0HXkGCEEfGb1aztxOhVmQ" name="PriorityReport"/>
     </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_VJdiUEiKEfGJlqplkR1iEg">
