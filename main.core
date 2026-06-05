@@ -66,6 +66,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_-OlaEGCHEfGhpqgbrexFhw" name="ClassAttendee">
+      <annotations text="ClassAttendee"/>
+      <viewElementEvents id="_F1e6AGCIEfGhpqgbrexFhw" name="ClassAttendee">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_HjD2IGCIEfGhpqgbrexFhw">
+          <targetInteractionFlowElement xsi:type="dop-extension:ModifiedViewContainer" href="classattendee.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_VJdiUEiKEfGJlqplkR1iEg">
     <domainElements xsi:type="core:UMLDomainConcept" id="_VJ5AIEiKEfGJlqplkR1iEg" name="CheckInImpl">

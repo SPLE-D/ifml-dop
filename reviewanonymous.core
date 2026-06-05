@@ -101,7 +101,7 @@
           <parameters id="_uACjp18uEfGropGdd4B6sg" name="reviewId"/>
           <viewElements xsi:type="ext:Form" id="_reviewAnonymousDeleteForm" name="Delete ReviewAnonymous">
             <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_uACjql8uEfGropGdd4B6sg" name="Konfirmasi">
-              <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uACjq18uEfGropGdd4B6sg" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+              <outInteractionFlows xsi:type="dop-extension:ModifiedNavigationFlow" id="_uACjq18uEfGropGdd4B6sg">
                 <parameterBindingGroup id="_uACjrF8uEfGropGdd4B6sg">
                   <parameterBindings id="_uACjrV8uEfGropGdd4B6sg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@parameters.0"/>
                 </parameterBindingGroup>
@@ -204,7 +204,4 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_0-xBIFN5EfGht6kfuK0zbw"/>
     </domainElements>
   </domainModel>
-  <viewpoints id="_createReviewAnonymousViewpoint" name="CreateReviewAnonymous" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0"/>
-  <viewpoints id="_updateReviewAnonymousViewpoint" name="UpdateReviewAnonymous" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@viewElements.0"/>
-  <viewpoints id="_deleteReviewAnonymousViewpoint" name="DeleteReviewAnonymous" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.1/@viewElements.0"/>
 </core:IFMLModel>

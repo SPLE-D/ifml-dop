@@ -11,7 +11,7 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_zfT3cE4REfGk1LLXzSRiFA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:List" id="_xGYeMEigEfGehLgYsDeT5g" name="Table Attendee">
-          <viewComponentParts xsi:type="core:DataBinding" id="_1m4N4EigEfGehLgYsDeT5g" name="Data Binding" uniformResourceIdentifier="call/attendeemanagement/list">
+          <viewComponentParts xsi:type="core:DataBinding" id="_1m4N4EigEfGehLgYsDeT5g" name="List Attendee" uniformResourceIdentifier="call/attendeemanagement/list">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_4UwwcEigEfGehLgYsDeT5g" name="attendeeId">
               <featureConcept href="main.core#//@domainModel/@domainElements.12"/>
             </subViewComponentParts>
@@ -149,5 +149,4 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_DyL8MEiEEfGJlqplkR1iEg"/>
     </domainElements>
   </domainModel>
-  <viewpoints id="_createAttendeeManagementViewpoint" name="CreateAttendeeManagement" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0"/>
 </core:IFMLModel>

@@ -268,7 +268,4 @@
       <structuralFeature xsi:type="uml:Property" href="uml-dop.uml#_haU_sVNOEfGiH6Q1wWpgzg"/>
     </domainElements>
   </domainModel>
-  <viewpoints id="_createTypeEventCreationViewpoint" name="CreateTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0"/>
-  <viewpoints id="_updateTypeEventCreationViewpoint" name="UpdateTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.1 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0"/>
-  <viewpoints id="_deleteTypeEventCreationViewpoint" name="DeleteTypeEventCreation" interactionFlowModelElements="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.2 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.1/@viewElements.0"/>
 </core:IFMLModel>
